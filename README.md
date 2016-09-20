@@ -4,7 +4,6 @@ This setup will get you started with running a basic patternlab integrated with 
 ##To get started, install all the necessary dependencies and load configuration folders and files.
 1. Clone or download this repository.
 2. ``` $ npm install ```
-3. ``` $ gulp install ```
 
 ##To build and watch patternlab files, and compile scss to css
 The below command uses browser-sync, gulp sass, and other build tools to automate your workflow.  After you run it, you will be able to edit the files and the project and browser will reload with the changes.
