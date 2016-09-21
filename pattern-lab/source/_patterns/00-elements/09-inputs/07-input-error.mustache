@@ -1,11 +1,2 @@
-<div class="pe-input pe-input--small pe-input--error">
-    <label for="i8">Text label <span class="pe-error-text">something went wrong!</span>
-    </label>
-    <input type="text" id="i8" value="Error (in small input)">
-</div>
-
-<div class="pe-input pe-input--error">
-    <label for="i9">Text label</label>
-    <input type="text" id="i9" aria-describedby="i9-error" value="Error">
-    <p id="i9-error" class="pe-error-text">Something went wrong!</p>
-</div>
+{{> elements-input:pe-input--small|pe-input--error(id: '9', labelError: 'error', inputValue: 'Error in small input') }}
+{{> elements-input:pe-input--error(id: '10', inputError: 'Something Went Wrong', inputValue: 'Error') }}
