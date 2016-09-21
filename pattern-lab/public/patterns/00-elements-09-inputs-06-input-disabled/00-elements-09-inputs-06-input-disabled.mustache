@@ -1,9 +1,2 @@
-<div class="pe-input pe-input--disabled">
-    <label for="i6">Text label</label>
-    <input type="text" id="i6" value="Disabled" disabled>
-</div>
-
-<div class="pe-input pe-input--disabled">
-    <label for="i7">Text label</label>
-    <input type="text" id="i7" placeholder="disabled with a placeholder" value="" disabled>
-</div>
+{{> elements-input:pe-input--disabled(id: '7', inputValue: 'Disabled', disabled: 'disabled')}}
+{{> elements-input:pe-input--disabled(id: '8', placeholder: 'Placeholder Disabled', disabled: 'disabled')}}
