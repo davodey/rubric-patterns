@@ -31,6 +31,7 @@ $gray-no-1: pe-color(gray-no-1);
 $boring: pe-color(boring);
 $gray-wash: pe-color(gray-wash);
 $sidewalk: pe-color(sidewalk);
+$sandy-gray: pe-color(sandy-gray);
 
 // Light Gray
 $hairline-gray: pe-color(hairline-gray);
@@ -46,9 +47,12 @@ $hyperdrive: pe-color(hyperdrive);
 $basic-blue: pe-color(basic-blue);
 $sea: pe-color(sea);
 $sky-blue: pe-color(sky-blue);
+$blue-milk: pe-color(blue-milk);
 
 // Other
 $highlighter: pe-color(highlighter);
+$firetruck: pe-color(firetruck);
+$spruce: pe-color(spruce);
 
 
 // swatch container
@@ -106,6 +110,10 @@ $highlighter: pe-color(highlighter);
   background-color: $hairline-gray;
 }
 
+.sandy-gray-bg {
+  background-color: $sandy-gray;
+}
+
 .brightly-lit-bg {
   background-color: $brightly-lit;
 }
@@ -148,6 +156,18 @@ $highlighter: pe-color(highlighter);
 
 .highlighter-bg {
   background-color: $highlighter;
+}
+
+.blue-milk-bg {
+  background-color: $blue-milk;
+}
+
+.firetruck-bg {
+  background-color: $firetruck;
+}
+
+.spruce-bg {
+  background-color: $spruce;
 }
 
 .icon-list {

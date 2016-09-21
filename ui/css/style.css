@@ -1388,6 +1388,11 @@ kbd {
   content: '\f0eb';
 }
 
+/* line 202, ui/scss/elements/_icons.scss */
+.pe-icon--shopping-cart:before {
+  content: '\f07a';
+}
+
 /* line 6, ui/scss/elements/_responsive-utilities.scss */
 .pe-xs--visible {
   display: none !important;
@@ -2465,6 +2470,51 @@ p + .pe-heading-level6 {
 .pe-calendar-dates .pe-calendar-dates--outside {
   color: #231f20;
   background-color: #ffffff;
+}
+
+/* line 13, ui/scss/elements/_meter.scss */
+progress[value] {
+  display: block;
+  width: 100%;
+  height: 20px;
+  color: #094877;
+  border: 1px solid #094877;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* line 2, ui/scss/elements/_meter.scss */
+progress[value]::-webkit-progress-bar {
+  background: #e6e6e6;
+}
+/* line 5, ui/scss/elements/_meter.scss */
+progress[value]::-webkit-progress-value {
+  background: #094877;
+}
+/* line 8, ui/scss/elements/_meter.scss */
+progress[value]::-moz-progress-bar {
+  background: #094877;
+}
+
+/* line 27, ui/scss/elements/_meter.scss */
+.pe-progressbar {
+  width: 100%;
+  border: 1px solid #094877;
+  background: #e6e6e6;
+}
+/* line 32, ui/scss/elements/_meter.scss */
+.pe-progressbar .pe-progressbar-inner {
+  height: 18px;
+  background: #094877;
+}
+
+/* line 38, ui/scss/elements/_meter.scss */
+.pe-progressbar-label {
+  color: #231f20;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: normal;
+  margin-bottom: 8px;
 }
 
 /*!
@@ -5974,7 +6024,7 @@ p + .pe-heading-level6 {
   clip: auto;
 }
 
-/* line 56, ui/scss/_pattern-lab.scss */
+/* line 60, ui/scss/_pattern-lab.scss */
 .swatch > div {
   width: 100%;
   padding: 1em;
@@ -5982,170 +6032,190 @@ p + .pe-heading-level6 {
   width: 100%;
 }
 @media (min-width: 641px) {
-  /* line 56, ui/scss/_pattern-lab.scss */
+  /* line 60, ui/scss/_pattern-lab.scss */
   .swatch > div {
     width: 50%;
   }
 }
 @media (min-width: 769px) {
-  /* line 56, ui/scss/_pattern-lab.scss */
+  /* line 60, ui/scss/_pattern-lab.scss */
   .swatch > div {
     width: 33.3%;
   }
 }
 @media (min-width: 1025px) {
-  /* line 56, ui/scss/_pattern-lab.scss */
+  /* line 60, ui/scss/_pattern-lab.scss */
   .swatch > div {
     width: 25%;
   }
 }
 @media (min-width: 1281px) {
-  /* line 56, ui/scss/_pattern-lab.scss */
+  /* line 60, ui/scss/_pattern-lab.scss */
   .swatch > div {
     width: 20%;
   }
 }
 
-/* line 65, ui/scss/_pattern-lab.scss */
+/* line 69, ui/scss/_pattern-lab.scss */
 .black-bg {
   background-color: #000000;
 }
 
-/* line 69, ui/scss/_pattern-lab.scss */
+/* line 73, ui/scss/_pattern-lab.scss */
 .pitch-bg {
   background-color: #231f20;
 }
 
-/* line 73, ui/scss/_pattern-lab.scss */
+/* line 77, ui/scss/_pattern-lab.scss */
 .gutenberg-black-bg {
   background-color: #333333;
 }
 
-/* line 77, ui/scss/_pattern-lab.scss */
+/* line 81, ui/scss/_pattern-lab.scss */
 .asphalt-bg {
   background-color: #3f3f3f;
 }
 
-/* line 81, ui/scss/_pattern-lab.scss */
+/* line 85, ui/scss/_pattern-lab.scss */
 .full-moon-bg {
   background-color: #424242;
 }
 
-/* line 85, ui/scss/_pattern-lab.scss */
+/* line 89, ui/scss/_pattern-lab.scss */
 .smoke-gray-bg {
   background-color: #545454;
 }
 
-/* line 89, ui/scss/_pattern-lab.scss */
+/* line 93, ui/scss/_pattern-lab.scss */
 .gray-no-1-bg {
   background-color: #565656;
 }
 
-/* line 93, ui/scss/_pattern-lab.scss */
+/* line 97, ui/scss/_pattern-lab.scss */
 .boring-bg {
   background-color: #a6a8ab;
 }
 
-/* line 97, ui/scss/_pattern-lab.scss */
+/* line 101, ui/scss/_pattern-lab.scss */
 .gray-wash-bg {
   background-color: #aeaeae;
 }
 
-/* line 101, ui/scss/_pattern-lab.scss */
+/* line 105, ui/scss/_pattern-lab.scss */
 .sidewalk-bg {
   background-color: #b3b3b3;
 }
 
-/* line 105, ui/scss/_pattern-lab.scss */
+/* line 109, ui/scss/_pattern-lab.scss */
 .hairline-gray-bg {
   background-color: #d0d0d0;
 }
 
-/* line 109, ui/scss/_pattern-lab.scss */
+/* line 113, ui/scss/_pattern-lab.scss */
+.sandy-gray-bg {
+  background-color: #6d6d6d;
+}
+
+/* line 117, ui/scss/_pattern-lab.scss */
 .brightly-lit-bg {
   background-color: #e6e6e6;
 }
 
-/* line 113, ui/scss/_pattern-lab.scss */
+/* line 121, ui/scss/_pattern-lab.scss */
 .off-white-bg {
   background-color: #f2f2f2;
 }
 
-/* line 117, ui/scss/_pattern-lab.scss */
+/* line 125, ui/scss/_pattern-lab.scss */
 .dirty-ice-bg {
   background-color: #f8f8f8;
 }
 
-/* line 121, ui/scss/_pattern-lab.scss */
+/* line 129, ui/scss/_pattern-lab.scss */
 .white-bg {
   background-color: #ffffff;
 }
 
-/* line 125, ui/scss/_pattern-lab.scss */
+/* line 133, ui/scss/_pattern-lab.scss */
 .deep-sea-bg {
   background-color: #0a4d80;
 }
 
-/* line 129, ui/scss/_pattern-lab.scss */
+/* line 137, ui/scss/_pattern-lab.scss */
 .royal-navy-bg {
   background-color: #094877;
 }
 
-/* line 133, ui/scss/_pattern-lab.scss */
+/* line 141, ui/scss/_pattern-lab.scss */
 .hyperdrive-bg {
   background-color: #0d65a6;
 }
 
-/* line 137, ui/scss/_pattern-lab.scss */
+/* line 145, ui/scss/_pattern-lab.scss */
 .basic-blue-bg {
   background-color: #107aca;
 }
 
-/* line 141, ui/scss/_pattern-lab.scss */
+/* line 149, ui/scss/_pattern-lab.scss */
 .sea-bg {
   background-color: #0c5d99;
 }
 
-/* line 145, ui/scss/_pattern-lab.scss */
+/* line 153, ui/scss/_pattern-lab.scss */
 .sky-blue-bg {
   background-color: #9dc0db;
 }
 
-/* line 149, ui/scss/_pattern-lab.scss */
+/* line 157, ui/scss/_pattern-lab.scss */
 .highlighter-bg {
   background-color: #fdec2e;
 }
 
-/* line 154, ui/scss/_pattern-lab.scss */
+/* line 161, ui/scss/_pattern-lab.scss */
+.blue-milk-bg {
+  background-color: #d9eeff;
+}
+
+/* line 165, ui/scss/_pattern-lab.scss */
+.firetruck-bg {
+  background-color: #d0021b;
+}
+
+/* line 169, ui/scss/_pattern-lab.scss */
+.spruce-bg {
+  background-color: #076826;
+}
+
+/* line 174, ui/scss/_pattern-lab.scss */
 .icon-list > li {
   padding: 5px;
   width: 100%;
 }
 @media (min-width: 641px) {
-  /* line 154, ui/scss/_pattern-lab.scss */
+  /* line 174, ui/scss/_pattern-lab.scss */
   .icon-list > li {
     width: 50%;
   }
 }
 @media (min-width: 769px) {
-  /* line 154, ui/scss/_pattern-lab.scss */
+  /* line 174, ui/scss/_pattern-lab.scss */
   .icon-list > li {
     width: 33.3%;
   }
 }
 @media (min-width: 1025px) {
-  /* line 154, ui/scss/_pattern-lab.scss */
+  /* line 174, ui/scss/_pattern-lab.scss */
   .icon-list > li {
     width: 25%;
   }
 }
 @media (min-width: 1281px) {
-  /* line 154, ui/scss/_pattern-lab.scss */
+  /* line 174, ui/scss/_pattern-lab.scss */
   .icon-list > li {
     width: 20%;
   }
 }
-/* line 158, ui/scss/_pattern-lab.scss */
+/* line 178, ui/scss/_pattern-lab.scss */
 .icon-list > li > span {
   width: 32px;
   font-size: 14px;
@@ -6154,12 +6224,12 @@ p + .pe-heading-level6 {
   margin-right: 10px;
 }
 
-/* line 168, ui/scss/_pattern-lab.scss */
+/* line 188, ui/scss/_pattern-lab.scss */
 .img-spec {
   max-width: 100%;
 }
 
-/* line 172, ui/scss/_pattern-lab.scss */
+/* line 192, ui/scss/_pattern-lab.scss */
 .presentation {
   padding: 25px;
   height: 1280px;

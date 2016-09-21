@@ -18,7 +18,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-ruby-sass": "^2.0.6",
     "gulp-sftp": "^0.1.5",
-    "pearson-elements": "^0.10.0",
+    "pearson-elements": "^0.13.0",
     "require-dir": "^0.3.0"
   },
   "dependencies": {
