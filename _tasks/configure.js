@@ -7,7 +7,7 @@ gulp.task('configure', ['install-elements'], function() {
         .pipe(gulp.dest('node_modules/edition-node-gulp/'));
 
     gulp.src("node_modules/edition-node-gulp/source/**/*")
-        .pipe(gulp.dest('pattern-lab/source'));
+        .pipe(gulp.dest('pattern-lab/source/'));
 
     gulp.src("node_modules/pearson-elements/dist/fonts/**")
         .pipe(gulp.dest('ui/fonts/'))
@@ -26,6 +26,7 @@ gulp.task('configure', ['install-elements'], function() {
 
     gulp.src("node_modules/font-awesome/scss/**")
         .pipe(gulp.dest('ui/scss/font-awesome/'));
+
 });
 
 

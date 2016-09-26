@@ -21,6 +21,7 @@ gulp.task('default', function(cb) {
         console.log(stderr);
         cb(err);
     });
+    gulp.watch('node_modules/edition-node-gulp/*.json', ['default']);
     gulp.watch('ui/scss/*.scss', ['compile-scss']);
     gulp.watch('ui/scss/**/*.scss', ['compile-scss']);
     gulp.watch('ui/js/*.js', ['copy-js']);
