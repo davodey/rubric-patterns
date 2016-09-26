@@ -6,8 +6,11 @@ gulp.task('configure', ['install-elements'], function() {
     gulp.src("patternlab-config.json")
         .pipe(gulp.dest('node_modules/edition-node-gulp/'));
 
+    gulp.src("meta/data.json")
+        .pipe(gulp.dest('pattern-lab/source/_data/'));
+
     gulp.src("node_modules/edition-node-gulp/source/**/*")
-        .pipe(gulp.dest('pattern-lab/source'));
+        .pipe(gulp.dest('pattern-lab/source/'));
 
     gulp.src("node_modules/pearson-elements/dist/fonts/**")
         .pipe(gulp.dest('ui/fonts/'))
