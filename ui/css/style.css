@@ -6480,7 +6480,6 @@ progress[value]::-moz-progress-bar {
 /* line 16, ui/scss/_flex.scss */
 .flex.align-center, .flex-container.align-center {
   -ms-flex-align: center;
-      -ms-grid-row-align: center;
       align-items: center;
 }
 /* line 20, ui/scss/_flex.scss */

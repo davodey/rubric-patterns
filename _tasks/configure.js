@@ -29,6 +29,7 @@ gulp.task('configure', ['install-elements'], function() {
 
     gulp.src("node_modules/font-awesome/scss/**")
         .pipe(gulp.dest('ui/scss/font-awesome/'));
+
 });
 
 
