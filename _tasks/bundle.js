@@ -4,11 +4,12 @@ var gulp = require('gulp'),
     headerfooter = require('gulp-header-footer');
     inject = require('gulp-inject'),
     strip = require('gulp-strip-comments'),
-        exec = require('child_process').exec;
+    replace = require('gulp-replace'),
+    exec = require('child_process').exec;
 
 // Copies the assetts from the pearson elements library and brings them into UI / Pattern Lab.
 
-gulp.task('bundle', ['copy-json', 'inject', 'template', 'strip', 'pretty', 'clean-bundle']);
+gulp.task('bundle', ['copy-json', 'inject', 'template', 'strip', 'pretty', 'clean-bundle', 'replace']);
 
 // copys the pl config file over to the node directory
 gulp.task('copy-json', function() {
@@ -73,3 +74,8 @@ gulp.task('clean-bundle', ['pretty'], function(cb) {
     });
 });
 
+gulp.task('replace', ['clean-bundle'], function(){
+    gulp.src(['./ui/*.html'])
+        .pipe(replace('../../images', './images'))
+        .pipe(gulp.dest('./ui/'));
+});
