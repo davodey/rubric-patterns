@@ -22,8 +22,10 @@ gulp.task('default', function(cb) {
         cb(err);
     });
     gulp.watch('node_modules/edition-node-gulp/*.json', ['default']);
-    gulp.watch('ui/scss/*.scss', ['compile-scss']);
-    gulp.watch('ui/scss/**/*.scss', ['compile-scss']);
+    gulp.watch('pattern-lab/scss/*.scss', ['compile-scss']);
+    gulp.watch('pattern-lab/scss/**/*.scss', ['compile-scss']);
+    gulp.watch('pattern-lab/source/_patterns/**/*.scss', ['compile-scss']);
+    gulp.watch('pattern-lab/source/_patterns/**/**/*.scss', ['compile-scss']);
     gulp.watch('ui/js/*.js', ['copy-js']);
     gulp.watch('ui/images/**/*', ['copy-img']);
 });

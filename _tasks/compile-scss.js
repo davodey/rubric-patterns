@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     notify = require('gulp-notify');
 
 gulp.task('compile-scss', function () {
-    return sass('ui/scss/*.scss', {
+    return sass('pattern-lab/scss/*.scss', {
             style: 'expanded',
             lineNumbers: true
         })
