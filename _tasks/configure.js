@@ -21,7 +21,7 @@ gulp.task('configure', ['install-elements'], function() {
         .pipe(gulp.dest('pattern-lab/source/images/'));
 
     gulp.src("node_modules/pearson-elements/scss/**")
-        .pipe(gulp.dest('ui/scss/elements/'));
+        .pipe(gulp.dest('pattern-lab/scss/elements/'));
 
     gulp.src("node_modules/font-awesome/fonts/**")
         .pipe(gulp.dest('ui/fonts/'))
