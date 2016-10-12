@@ -56,7 +56,7 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
-  "patternExportPatternPartials": ["atoms-one", "elements-meter"],
+  "patternExportPatternPartials": ["atoms-name"],
   "patternExportDirectory": "../../dist/",
   "cacheBust": true,
   "starterkitSubDir": "dist",

@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 // Copies the assetts from the pearson elements library and brings them into UI / Pattern Lab.
 
-gulp.task('bundle', ['copy-json', 'inject', 'template', 'strip', 'pretty', 'clean-bundle', 'replace']);
+gulp.task('bundle', ['copy-json', 'inject', 'template', 'strip', 'pretty', 'clean-bundle', 'replace', 'copy-scss']);
 
 // copys the pl config file over to the node directory
 gulp.task('copy-json', function() {
@@ -67,7 +67,7 @@ gulp.task('pretty', ['strip'], function() {
 });
 
 gulp.task('clean-bundle', ['pretty'], function(cb) {
-    exec('rm -r dist', function (err, stdout, stderr) {
+    return exec('rm -r dist', function (err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
         cb(err);
