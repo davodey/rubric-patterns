@@ -6,7 +6,7 @@
       "data" : "../../pattern-lab/source/_data/",
       "meta": "../../pattern-lab/source/_meta/",
       "annotations" : "../../pattern-lab/source/_annotations/",
-      "styleguide" : "../../pattern-lab/source/styleguide/",
+      "styleguide" : "./node_modules/styleguidekit-assets-default/dist/",
       "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
       "js" : "../../pattern-lab/source/js",
       "images" : "../../pattern-lab/source/images",
@@ -53,7 +53,7 @@
   },
   "ishMinimum": "240",
   "ishMaximum": "2600",
-  "patternStateCascade": ["inprogress", "inreview", "complete"],
+  "patternStateCascade": ["inprogress", "inreview", "complete", "uxboilerplate"],
   "patternStates": {
   },
   "patternExportPatternPartials": ["atoms-name"],

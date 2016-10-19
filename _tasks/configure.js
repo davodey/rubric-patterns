@@ -9,8 +9,8 @@ gulp.task('configure', ['install-elements'], function() {
     gulp.src("meta/data.json")
         .pipe(gulp.dest('pattern-lab/source/_data/'));
 
-    gulp.src("node_modules/styleguidekit-assets-default/dist/**/*")
-        .pipe(gulp.dest('pattern-lab/source/styleguide/'));
+    gulp.src("meta/styleguide.min.css")
+        .pipe(gulp.dest('node_modules/edition-node-gulp/node_modules/styleguidekit-assets-default/dist/styleguide/css/'));
 
     gulp.src("node_modules/edition-node-gulp/source/**/*")
         .pipe(gulp.dest('pattern-lab/source/'));
