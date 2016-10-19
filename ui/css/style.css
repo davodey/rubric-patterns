@@ -3153,6 +3153,41 @@ div[class="pe-template__large-gap"] > :last-child {
     float: right;
   }
 }
+/* line 1, pattern-lab/scss/_ux-boilerplate.scss */
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857;
+}
+
+/* line 7, pattern-lab/scss/_ux-boilerplate.scss */
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eeeeee;
+}
+
+/* line 14, pattern-lab/scss/_ux-boilerplate.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 17, pattern-lab/scss/_ux-boilerplate.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 20, pattern-lab/scss/_ux-boilerplate.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 23, pattern-lab/scss/_ux-boilerplate.scss */
+.text-justify {
+  text-align: justify;
+}
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -6869,6 +6904,16 @@ div[class="pe-template__large-gap"] > :last-child {
 .presentation {
   padding: 25px;
   height: 1280px;
+}
+
+/* line 198, pattern-lab/scss/_pattern-lab.scss */
+.uxboilerplate {
+  color: #107aca !important;
+}
+
+/* line 202, pattern-lab/scss/_pattern-lab.scss */
+.uxboilerplate:before {
+  color: #107aca !important;
 }
 
 /* line 3, pattern-lab/scss/_helpers.scss */

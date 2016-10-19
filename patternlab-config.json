@@ -6,7 +6,7 @@
       "data" : "../../pattern-lab/source/_data/",
       "meta": "../../pattern-lab/source/_meta/",
       "annotations" : "../../pattern-lab/source/_annotations/",
-      "styleguide" : "./node_modules/styleguidekit-assets-default/dist/",
+      "styleguide" : "../../pattern-lab/source/styleguide/",
       "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
       "js" : "../../pattern-lab/source/js",
       "images" : "../../pattern-lab/source/images",
