@@ -1,4 +1,4 @@
-# Elements Patternlab V 0.2
+# Elements Patternlab V 0.3
 http://159.182.11.87/elements-patternlab/
 
 ## Pattern Lab & Elements Boilerplate
