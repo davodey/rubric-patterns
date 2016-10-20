@@ -195,10 +195,5 @@ $spruce: pe-color(spruce);
   height:1280px;
 }
 
-.uxboilerplate {
-  color: #107aca !important;
-}
 
-.uxboilerplate:before {
-  color: #107aca !important;
-}
+.ux-boilerplate:before{content: "• "; color:deepskyblue !important;}.elements:before{content: "• "; color:greenyellow !important;}.custom:before{content: "• "; color:hotpink !important;}.compounds:before{content: "• "; color:mediumpurple !important;}.inprogress:before{content: "• "; color:#ff4136 !important;}

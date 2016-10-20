@@ -6944,14 +6944,34 @@ a.active {
   height: 1280px;
 }
 
-/* line 198, pattern-lab/scss/_pattern-lab.scss */
-.uxboilerplate {
-  color: #107aca !important;
+/* line 199, pattern-lab/scss/_pattern-lab.scss */
+.ux-boilerplate:before {
+  content: "• ";
+  color: deepskyblue !important;
 }
 
-/* line 202, pattern-lab/scss/_pattern-lab.scss */
-.uxboilerplate:before {
-  color: #107aca !important;
+/* line 199, pattern-lab/scss/_pattern-lab.scss */
+.elements:before {
+  content: "• ";
+  color: greenyellow !important;
+}
+
+/* line 199, pattern-lab/scss/_pattern-lab.scss */
+.custom:before {
+  content: "• ";
+  color: hotpink !important;
+}
+
+/* line 199, pattern-lab/scss/_pattern-lab.scss */
+.compounds:before {
+  content: "• ";
+  color: mediumpurple !important;
+}
+
+/* line 199, pattern-lab/scss/_pattern-lab.scss */
+.inprogress:before {
+  content: "• ";
+  color: #ff4136 !important;
 }
 
 /* line 3, pattern-lab/scss/_helpers.scss */
