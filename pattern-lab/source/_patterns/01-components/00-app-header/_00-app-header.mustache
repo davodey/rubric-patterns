@@ -1,0 +1,79 @@
+<div class="demo-container" data-header-mode="{{mode}}"></div>
+ <script src="../../js/components/app-header/build/dist.app-header.js"></script> 
+<script src="https://cdn.polyfill.io/v2/polyfill.js?features=CustomEvent"></script>
+<script>
+    // Uses the native CustomEvent constructor that no version of IE supports (MS Edge does!).
+    // See usage of polyfill-customevent.js to work in IE.
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        var element = document.querySelector('.demo-container');
+        var config = {
+            user: { givenName: 'XXXXXXXXXXXXXXXX' },
+            mode: '{{mode}}',
+            courseItems: [
+                { text: 'Physics', href: 'https://example.com/physics' },
+                { text: 'Chemistry', href: 'https://example.com/physics' }
+            ],
+            courseNav: {
+                heading: { text: 'Physics', href: 'https://example.com/physics' },
+                items: [
+                    { text: 'Performance', href: 'https://example.com/performance' },
+                    { text: 'Assessments', href: 'https://example.com/assessments' }
+                ]
+            },
+            onLogin: function () {
+                alert('You signed in');
+            },
+            onLogout: function () {
+                alert('You signed out');
+            }
+
+        };
+
+        document.dispatchEvent(new CustomEvent('o.DOMContentLoaded', {
+            detail: {
+                element: element,
+                config: config
+            }
+        }));
+        document.dispatchEvent(new CustomEvent('o.InitContextualHelp'));
+
+        setTimeout(function() {
+
+            config.user = { givenName: 'Test User' };
+
+            document.dispatchEvent(new CustomEvent('o.DOMContentLoaded', {
+                detail: {
+                    element: element,
+                    config: config
+                }
+            }));
+        }, 2000);
+
+
+
+        // Event Listeners
+
+        // Help menu
+        document.addEventListener('oAppHeader.help.toggle', function () {
+            console.log('oAppHeader.help.toggle');
+        });
+
+        // Sign out event
+        document.addEventListener('oAppHeader.logout', function () {
+            console.log('oAppHeader.logout');
+        });
+
+    });
+</script>
+<script src="../../js/components/contextual-help/build/dist.contextual-help.js"></script>
+<script type="application/json" data-o-contextual-help-config>
+    {
+        "helpTopics": [
+            "console/student/freetrial",
+            "console/student/studentresources",
+            "console/student/contactsupport"
+        ]
+    }
+</script>

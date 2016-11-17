@@ -1,0 +1,20 @@
+<div data-o-component="o-drawer" id="right-drawer-demo" class="o-drawer-right o-drawer-animated" style="padding:5px;">
+    <button type="button" data-target="#right-drawer-demo" data-close="o-drawer">close</button>
+    <br>
+    <h1>Hello Right Drawer</h1>
+    <p>Right Drawer stuffs... just another right Drawer, being a right Drawer, doing right Drawer things. <a href="#quu">...random link</a> and many <a href="#quu">other</a> right-side things.</p>
+    <form method="get" action="#">
+        <label for="buu" style="display:block;">Buu: </label><input type="text" id="buu" placeholder="type in me" value="">
+        <input type="submit" value="Dummy!">
+    </form>
+</div>
+<div style="width: 240px; margin: 0px auto;">
+    <a href="#right-drawer-demo" data-toggle="o-drawer">Toggle Right Drawer</a>
+</div>
+ <script src="../../js/components/drawer/build/dist.drawer.js"></script> 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        'use strict';
+        document.dispatchEvent(new CustomEvent('o.InitAllDrawerElements'));
+    });
+</script>

@@ -1,0 +1,12 @@
+<div id="demo-target1"></div> 
+<script src="../../js/components/avatar-display/build/dist.avatar-display.js"></script> 
+<script>
+    document.body.dispatchEvent(new CustomEvent('o.InitAvatarDisplay', {
+        detail: {
+            elementId: 'demo-target1',
+            avatarURLText: 'http://keenthemes.com/preview/metronic/theme/assets/pages/media/profile/profile_user.jpg',
+            avatarAltText: 'Small Avatar Image',
+            avatarSize: 'large'
+        }
+    }));
+</script>

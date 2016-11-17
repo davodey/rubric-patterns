@@ -1,0 +1,18 @@
+<div data-o-component="o-drawer" id="left-drawer-demo" class="o-drawer-animated" style="padding:5px;">
+    <button type="button" data-target="#left-drawer-demo" data-close="o-drawer">close</button>
+    <br>
+    <h1>Hello Left Drawer</h1>
+    <p>Drawer stuffs... just a Drawer, being a Drawer, doing Drawer things. <a href="#foo">Random link</a> and many other things.</p>
+    <label for="bar" style="display:block;">Bar: </label><input type="text" id="bar" value="focusables">
+</div>
+<div style="width: 240px; margin: 0px auto;">
+    <a href="#left-drawer-demo" data-toggle="o-drawer">Toggle Left Drawer</a><br/>
+</div>
+
+ <script src="../../js/components/drawer/build/dist.drawer.js"></script> 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        'use strict';
+        document.dispatchEvent(new CustomEvent('o.InitAllDrawerElements'));
+    });
+</script>
