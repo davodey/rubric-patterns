@@ -1,0 +1,11 @@
+.DS_Store
+ui/.DS_Store
+ui/scss/.DS_Store
+
+.idea/
+.sass-cache/
+node_modules/
+pattern-lab/public
+dest/
+
+.zip
