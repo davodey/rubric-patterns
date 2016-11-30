@@ -1,0 +1,16 @@
+.radio-group {
+  color:$gray;
+  .pe-radio {
+	display:flex;
+	align-items: center;
+	input {
+	  flex-basis: 20px;
+	}
+	label {
+	  flex:1;
+	}
+	@media (max-width:640px) {
+	  margin-bottom:1em;
+	}
+  }
+}

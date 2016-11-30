@@ -1,0 +1,35 @@
+/* Imports Elements SDK SCSS, Font Awesome & Patternlab styles */
+@import 'elements/elements';
+@import 'font-awesome/font-awesome';
+@import '_pattern-lab.scss';
+
+// Loads generic helper classes
+@import 'variables';
+@import 'mixins';
+@import 'helpers';
+@import 'flex';
+
+// Start project files
+@import '../source/_patterns/01-atoms/01-colors/colors';
+@import '../source/_patterns/01-atoms/04-buttons/buttons';
+@import '../source/_patterns/01-atoms/05-inputs/inputs';
+@import '../source/_patterns/01-atoms/01-colors/colors';
+@import '../source/_patterns/01-atoms/02-typography/text';
+@import '../source/_patterns/01-atoms/08-video/video';
+@import '../source/_patterns/01-atoms/09-progress-circle/progress-circle';
+
+@import '../source/_patterns/02-molecules/02-video-quiz/point-worth';
+@import '../source/_patterns/02-molecules/02-video-quiz/question-list-item';
+@import '../source/_patterns/02-molecules/02-video-quiz/questions-radio';
+
+@import '../source/_patterns/03-organisms/00-video-quiz/information';
+@import '../source/_patterns/03-organisms/00-video-quiz/video-quiz';
+@import '../source/_patterns/03-organisms/00-video-quiz/alert';
+@import '../source/_patterns/03-organisms/00-video-quiz/modal';
+@import '../source/_patterns/03-organisms/00-video-quiz/question-list-answer';
+@import '../source/_patterns/03-organisms/00-video-quiz/dropdown-options';
+
+
+@import '../source/_patterns/04-components/grading-component';
+@import '../source/_patterns/04-components/select-rubrics';
+

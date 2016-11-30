@@ -1,6 +1,8 @@
 // Primary Colors
 $blue: $basic-blue;
 $light-blue: lighten($sky-blue, 10%);
+$dark-blue: $deep-sea;
+$alt-color: #095a6f;
 
 // Neutral Colors
 $gray: $boring;
@@ -14,6 +16,9 @@ $green: #076826;
 $dark-green: darken($green, 15%);
 $light-green: lighten($green, 70%);
 $disabled: $brightly-lit;
+
+$alert: $red;
+
 
 // Measurements
 $unit: 1em;

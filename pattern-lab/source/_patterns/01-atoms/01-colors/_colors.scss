@@ -39,6 +39,15 @@
   background:$disabled;
 }
 
+.dark-blue-bg {
+  background:$dark-blue;
+}
+
+.alt-color-bg {
+  background:$alt-color;
+}
+
+
 
 // font colors
 .gray {
@@ -79,4 +88,12 @@
 
 .disabled {
   color:$disabled;
+}
+
+.dark-blue {
+  color:$dark-blue;
+}
+
+.alt-color {
+  color: $alt-color;
 }

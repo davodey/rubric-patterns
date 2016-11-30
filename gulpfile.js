@@ -21,8 +21,11 @@ gulp.task('default', function(cb) {
         console.log(stderr);
         cb(err);
     });
-    gulp.watch('ui/scss/*.scss', ['compile-scss']);
-    gulp.watch('ui/scss/**/*.scss', ['compile-scss']);
-    gulp.watch('ui/js/*.js', ['copy-js']);
-    gulp.watch('ui/images/**/*', ['copy-img']);
+    gulp.watch('./pattern-lab/scss/*.scss', ['compile-scss']);
+    gulp.watch('./pattern-lab/scss/**/*.scss', ['compile-scss']);
+    gulp.watch('./pattern-lab/source/_patterns/**/*.scss', ['compile-scss']);
+    gulp.watch('./pattern-lab/source/_patterns/**/**/*.scss', ['compile-scss']);
+    gulp.watch('./pattern-lab/source/js/*.js', ['copy-js']);
+    gulp.watch('./pattern-lab/source/js/**/*.js', ['copy-js']);
+    gulp.watch('./pattern-lab/source/images/**/*', ['copy-img']);
 });
