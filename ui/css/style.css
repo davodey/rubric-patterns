@@ -1159,8 +1159,8 @@ kbd {
 
 @font-face {
   font-family: 'pearson-fa';
-  src: url("/fonts/pearson-fa.eot?i9zm12");
-  src: url("/fonts/pearson-fa.eot?i9zm12#iefix") format("embedded-opentype"), url("/fonts/pearson-fa.ttf?i9zm12") format("truetype"), url("/fonts/pearson-fa.woff?i9zm12") format("woff"), url("/fonts/pearson-fa.svg?i9zm12#pearson-fa") format("svg");
+  src: url("../fonts/pearson-fa.eot?i9zm12");
+  src: url("../fonts/pearson-fa.eot?i9zm12#iefix") format("embedded-opentype"), url("../fonts/pearson-fa.ttf?i9zm12") format("truetype"), url("../fonts/pearson-fa.woff?i9zm12") format("woff"), url("../fonts/pearson-fa.svg?i9zm12#pearson-fa") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -6306,38 +6306,48 @@ p + .pe-heading-level6 {
   padding-right: 1em;
 }
 
-/* line 120, pattern-lab/scss/_helpers.scss */
+/* line 119, pattern-lab/scss/_helpers.scss */
+.padding-double {
+  padding: 2em;
+}
+
+/* line 122, pattern-lab/scss/_helpers.scss */
+.padding-sides-double {
+  padding: 0 2em;
+}
+
+/* line 127, pattern-lab/scss/_helpers.scss */
 .in-btn-left {
   margin-left: 5px;
   display: inline-block;
 }
 
-/* line 127, pattern-lab/scss/_helpers.scss */
+/* line 134, pattern-lab/scss/_helpers.scss */
 .white {
   color: #ffffff;
 }
 
-/* line 131, pattern-lab/scss/_helpers.scss */
+/* line 138, pattern-lab/scss/_helpers.scss */
 .black {
   color: #000000;
 }
 
-/* line 136, pattern-lab/scss/_helpers.scss */
+/* line 143, pattern-lab/scss/_helpers.scss */
 .text-align-center {
   text-align: center;
 }
 
-/* line 140, pattern-lab/scss/_helpers.scss */
+/* line 147, pattern-lab/scss/_helpers.scss */
 .text-align-right {
   text-align: right;
 }
 
-/* line 144, pattern-lab/scss/_helpers.scss */
+/* line 151, pattern-lab/scss/_helpers.scss */
 .bold {
   font-weight: bold;
 }
 
-/* line 148, pattern-lab/scss/_helpers.scss */
+/* line 155, pattern-lab/scss/_helpers.scss */
 .line {
   width: 100%;
   position: relative;
@@ -6346,7 +6356,7 @@ p + .pe-heading-level6 {
   border-bottom: 1px solid #b3b3b3;
 }
 
-/* line 158, pattern-lab/scss/_helpers.scss */
+/* line 165, pattern-lab/scss/_helpers.scss */
 .circle {
   display: -ms-flexbox;
   display: flex;
@@ -6362,7 +6372,7 @@ p + .pe-heading-level6 {
   margin: 0 10px;
 }
 
-/* line 167, pattern-lab/scss/_helpers.scss */
+/* line 174, pattern-lab/scss/_helpers.scss */
 .rectangle {
   display: -ms-flexbox;
   display: flex;
@@ -6373,7 +6383,7 @@ p + .pe-heading-level6 {
   height: 3px;
 }
 
-/* line 172, pattern-lab/scss/_helpers.scss */
+/* line 179, pattern-lab/scss/_helpers.scss */
 .oval {
   display: -ms-flexbox;
   display: flex;
@@ -6385,7 +6395,7 @@ p + .pe-heading-level6 {
   min-width: 75px;
 }
 
-/* line 178, pattern-lab/scss/_helpers.scss */
+/* line 185, pattern-lab/scss/_helpers.scss */
 .margin-bottom-thin {
   margin-bottom: .5em;
 }
@@ -6850,14 +6860,14 @@ h2 {
 }
 
 @media (max-width: 640px) {
-  /* line 2, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_information.scss */
+  /* line 2, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_information.scss */
   .information .row {
     border: 0;
     border-bottom: 1px solid;
   }
 }
 @media (max-width: 640px) {
-  /* line 8, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_information.scss */
+  /* line 8, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_information.scss */
   .information .col {
     width: 100%;
     text-align: left;
@@ -6866,35 +6876,54 @@ h2 {
     border-top: 1px solid;
   }
 }
-/* line 17, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_information.scss */
+/* line 17, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_information.scss */
 .information span {
   font-size: .875rem;
   line-height: auto;
 }
 
 @media (max-width: 640px) {
-  /* line 1, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_video-quiz.scss */
+  /* line 1, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
   .video-quiz-container {
     -ms-flex-direction: column;
         flex-direction: column;
   }
 }
 
-/* line 6, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_video-quiz.scss */
+/* line 7, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
 .questions {
   padding: 4em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
 }
-@media (min-width: 640px) {
-  /* line 6, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_video-quiz.scss */
+@media (min-width: 768px) {
+  /* line 7, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
   .questions {
     max-width: 50%;
   }
 }
 
-/* line 1, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 17, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
+.question-content {
+  position: relative;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 22, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
+.question-content .answer-all {
+  position: absolute;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 17, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
+  .question-content {
+    max-width: 50%;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert-box {
   position: relative;
   width: 100%;
@@ -6907,7 +6936,7 @@ h2 {
   top: 30%;
 }
 
-/* line 9, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 9, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert {
   border-top: 5px solid #D0021B;
   background: #ffffff;
@@ -6917,127 +6946,163 @@ h2 {
   box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.42);
 }
 @media (max-width: 768px) {
-  /* line 9, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+  /* line 9, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
   .alert {
     box-shadow: -1px 2px 90px -2px rgba(0, 0, 0, 0.42);
   }
 }
-/* line 20, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 20, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert label {
   font-weight: bold;
   color: #D0021B;
 }
-/* line 25, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 25, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert p {
   margin-top: 1em;
 }
-/* line 29, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 29, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert button {
   background: none;
   border: 0;
 }
-/* line 33, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 33, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert button:hover {
   background: none;
   border: 0;
 }
-/* line 38, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 38, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert.success {
   border-color: #076826;
 }
-/* line 41, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_alert.scss */
+/* line 41, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_alert.scss */
 .alert.success label {
   color: #076826;
 }
 
-/* line 1, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_modal.scss */
+/* line 1, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .overlay {
-  height: 100%;
+  position: absolute;
+  padding: 2em;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  opacity: .4;
-  z-index: -1;
+  height: 100%;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
-/* line 12, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_modal.scss */
+/* line 14, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .modal-content {
   margin-top: 15%;
   width: 50%;
   box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.42);
+  z-index: 3;
+  position: absolute;
+}
+@media (max-width: 1280px) {
+  /* line 14, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
+  .modal-content {
+    margin-top: 25%;
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 14, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
+  .modal-content {
+    margin-top: 45%;
+  }
+}
+@media (max-width: 640px) {
+  /* line 14, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
+  .modal-content {
+    margin-top: 55%;
+  }
 }
 
-/* line 19, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_modal.scss */
+/* line 34, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .modal-title button {
   background: none;
   border: none;
   font-size: 1.5em;
 }
 
-/* line 2, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_question-list-answer.scss */
+/* line 2, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question-list-answer.scss */
 .details .green {
   -ms-flex-preferred-size: 25px;
       flex-basis: 25px;
   color: #076826;
 }
 
-/* line 1, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 1, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown {
   box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.42);
-  max-width: 200px;
+  min-width: 200px;
+  background: #ffffff;
+  margin: 0;
+  margin-top: .5em;
+  position: absolute;
+  z-index: 100;
+  right: 0;
 }
 
-/* line 6, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 12, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown-list {
   padding: 0;
 }
-/* line 8, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 14, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown-list li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 13, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 19, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown-list li a {
   text-decoration: none;
   color: #a6a8ab;
   padding-right: 3em;
 }
-/* line 18, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 24, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown-list li a:hover {
   background-color: #095a6f;
   color: #ffffff;
   cursor: pointer;
 }
-/* line 24, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 30, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown-list li a.disabled {
   color: #e6e6e6;
 }
-/* line 26, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 32, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown-list li a.disabled:hover {
   background: none;
   color: #e6e6e6;
   cursor: default;
 }
-/* line 33, pattern-lab/source/_patterns/03-organisms/00-video-quiz/_dropdown-options.scss */
+/* line 39, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_dropdown-options.scss */
 .dropdown-list li a.complete:hover {
   background: none;
   color: #a6a8ab;
   cursor: default;
 }
 
-/* line 1, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_quiz-score.scss */
+  .quiz-score {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .grading-component {
   background: #ffffff;
 }
-/* line 4, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 4, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .grading-component.fixed {
   max-width: 320px;
 }
 
-/* line 8, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 8, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .grading-headline {
   display: -ms-flexbox;
   display: flex;
@@ -7049,53 +7114,53 @@ h2 {
   background: #b3b3b3;
 }
 
-/* line 17, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 17, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available {
   margin: 0 5px;
   text-align: center;
   -ms-flex-positive: 1;
       flex-grow: 1;
 }
-/* line 22, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 22, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available .score {
   color: #076826;
   font-weight: bold;
 }
-/* line 27, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 27, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available .visual-marker {
   background: #076826;
   width: 100%;
 }
-/* line 31, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 31, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available.disabled {
   cursor: pointer;
 }
-/* line 33, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 33, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available.disabled span {
   color: #e6e6e6;
 }
-/* line 36, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 36, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available.disabled div {
   background: #e6e6e6;
 }
-/* line 40, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 40, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available.disabled:hover span {
   color: #076826;
 }
-/* line 43, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 43, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available.disabled:hover div {
   background: #076826;
 }
-/* line 48, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 48, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available.disabled:focus span {
   color: #076826;
 }
-/* line 51, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 51, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .points-available.disabled:focus div {
   background: #076826;
 }
 
-/* line 58, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 58, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .point-scale {
   display: -ms-flexbox;
   display: flex;
@@ -7104,13 +7169,13 @@ h2 {
   padding-top: 15px;
 }
 
-/* line 64, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 64, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .grading-criteria {
   padding: 15px;
   border-bottom: 1px solid #b3b3b3;
 }
 
-/* line 69, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 69, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .total-score {
   padding: 15px;
   display: -ms-flexbox;
@@ -7122,24 +7187,24 @@ h2 {
   margin-top: 15px;
 }
 
-/* line 77, pattern-lab/source/_patterns/04-components/_grading-component.scss */
+/* line 77, pattern-lab/source/_patterns/03-organisms/00-rubrics/_grading-component.scss */
 .comment-box {
   padding: 15px;
 }
 
-/* line 1, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 1, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-component {
   max-width: 320px;
   height: 675px;
   background: #ffffff;
 }
 
-/* line 7, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 7, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .close-btn {
   margin: 1em;
 }
 
-/* line 11, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 11, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .title-info {
   display: -ms-flexbox;
   display: flex;
@@ -7151,7 +7216,7 @@ h2 {
   border-bottom: 1px solid #a6a8ab;
 }
 
-/* line 17, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 17, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .create-rubric {
   display: -ms-flexbox;
   display: flex;
@@ -7162,19 +7227,19 @@ h2 {
   padding-top: 1.5em;
   padding-bottom: 1em;
 }
-/* line 22, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 22, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .create-rubric button {
   min-width: 228px;
 }
 
-/* line 27, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 27, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .text-decoration {
   display: -ms-flexbox;
   display: flex;
   padding: 0 1em;
 }
 
-/* line 32, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 32, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .filter-rubrics {
   display: -ms-flexbox;
   display: flex;
@@ -7190,31 +7255,31 @@ h2 {
   color: #a6a8ab;
 }
 
-/* line 41, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 41, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics {
   max-height: 188px;
   overflow-y: scroll;
   margin: 0 1em;
   border: 1px solid #a6a8ab;
 }
-/* line 46, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 46, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics::-webkit-scrollbar {
   width: 1em;
 }
-/* line 50, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 50, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics::-webkit-scrollbar-track {
   background-color: #ffffff;
 }
-/* line 54, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 54, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background-color: #b3b3b3;
 }
-/* line 59, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 59, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics ul {
   margin: 0;
 }
-/* line 63, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 63, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics ul > li a {
   display: inline-block;
   color: #565656;
@@ -7222,16 +7287,16 @@ h2 {
   padding: 5px 1em;
   text-decoration: none;
 }
-/* line 70, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 70, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics ul > li a:hover {
   color: #565656;
 }
-/* line 74, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 74, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .select-rubrics ul > li a:focus {
   color: #565656;
 }
 
-/* line 83, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 83, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .actions {
   display: -ms-flexbox;
   display: flex;
@@ -7241,12 +7306,12 @@ h2 {
       justify-content: center;
   padding: 0 1em;
 }
-/* line 88, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 88, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .actions button:disabled {
   color: #a6a8ab;
 }
 
-/* line 94, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 94, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .add-rubric {
   display: -ms-flexbox;
   display: flex;
@@ -7256,8 +7321,68 @@ h2 {
       justify-content: center;
   padding-top: 16px;
 }
-/* line 98, pattern-lab/source/_patterns/04-components/_select-rubrics.scss */
+/* line 98, pattern-lab/source/_patterns/03-organisms/00-rubrics/_select-rubrics.scss */
 .add-rubric button {
   padding: 0;
   min-width: 228px;
+}
+
+/* line 2, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+.video-quiz-container .information-container, .video-quiz-container .dropdown-container {
+  padding: 3em;
+  padding-bottom: 0;
+}
+@media (max-width: 640px) {
+  /* line 2, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  .video-quiz-container .information-container, .video-quiz-container .dropdown-container {
+    padding: 2em 0 0 0;
+  }
+}
+/* line 10, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+.video-quiz-container .dropdown-container {
+  text-align: right;
+  padding-top: 0;
+}
+@media (max-width: 640px) {
+  /* line 10, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  .video-quiz-container .dropdown-container {
+    padding: 1em;
+  }
+}
+/* line 17, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+.video-quiz-container .quiz-container {
+  padding: 2em 3em;
+}
+@media (max-width: 640px) {
+  /* line 17, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  .video-quiz-container .quiz-container {
+    padding: 1em;
+  }
+}
+@media (max-width: 640px) {
+  /* line 25, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  .video-quiz-container .col, .video-quiz-container .row {
+    border: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 1, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  .video-quiz-container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+/* line 1, pattern-lab/source/_patterns/05-templates/01-video-quiz/_overview.scss */
+.score-container {
+  padding: 3em 2em;
+  padding-bottom: 0;
+}
+
+/* line 6, pattern-lab/source/_patterns/05-templates/01-video-quiz/_overview.scss */
+.success-alert {
+  position: absolute;
+  top: 20px;
+  z-index: 10000;
+  width: 35%;
 }

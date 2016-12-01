@@ -1,0 +1,25 @@
+{{#modal}}
+    {{> organisms-modal }}
+{{/modal}}
+{{> organisms-header }}
+
+<div class="video-quiz-container">
+    {{#alert}}
+        <div class="success-alert margin-sides padding-sides-double">
+            {{> organisms-alert}}
+        </div>
+    {{/alert}}
+    <section class="information-container">
+        {{> organisms-information}}
+    </section>
+    {{#dropdown-menu}}
+        <div class="dropdown-container">
+            {{>organisms-dropdown-options}}
+        </div>
+    {{/dropdown-menu}}
+    <section class="quiz-container">
+        {{> organisms-video-quiz }}
+    </section>
+</div>
+
+

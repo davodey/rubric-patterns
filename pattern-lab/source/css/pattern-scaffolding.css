@@ -52,3 +52,6 @@
   font-size: 90%;
   line-height: 1;
 }
+.o-header--fixed {
+  position:absolute !important;
+}

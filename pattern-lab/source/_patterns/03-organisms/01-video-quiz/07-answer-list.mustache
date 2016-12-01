@@ -1,8 +1,13 @@
-<div class="answer-list padding">
-    <div class="border-top border-left border-right">
+<div class="answer-list">
+    <div class="">
         {{> molecules-question-list-item(question: "Question 1", time: "[0:12]") }}
         {{> molecules-question-list-item(question: "Question 2", time: "[1:12]") }}
-        {{> organisms-question-list-answer }}
+        {{#arrow-up}}
+            {{> molecules-question-list-item(question: "Question 3", time: "[2:12]") }}
+        {{/arrow-up}}
+        {{#arrow-down}}
+            {{> organisms-question-list-answer }}
+         {{/arrow-down}}
         {{> molecules-question-list-item(question: "Question 4", time: "[3:42]") }}
         {{> molecules-question-list-item(question: "Question 5", time: "[3:40]") }}
     </div>

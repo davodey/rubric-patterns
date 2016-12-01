@@ -1,0 +1,30 @@
+.video-quiz-container {
+  @media(max-width:640px) {
+    flex-direction: column;
+  }
+}
+
+.questions {
+  padding:4em;
+  flex-wrap: wrap;
+  text-align: center;
+  
+  @media (min-width:768px) {
+    max-width:50%;
+  }
+}
+
+.question-content {
+  position:relative;
+  padding:0;
+  flex-wrap: wrap;
+  
+  .answer-all {
+    position:absolute;
+    width:100%;
+  }
+  
+  @media (min-width:768px) {
+    max-width:50%;
+  }
+}

@@ -116,6 +116,13 @@
   padding-right: $unit;
 }
 
+.padding-double {
+  padding: 2em;
+}
+.padding-sides-double {
+  padding: 0 2em;
+}
+
 // icon buttons
 .in-btn-left {
   margin-left:5px;
