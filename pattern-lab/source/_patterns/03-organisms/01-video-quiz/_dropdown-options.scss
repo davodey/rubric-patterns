@@ -2,7 +2,6 @@
   box-shadow: -1px 2px 15px -4px rgba(0,0,0,0.42);
   min-width:200px;
   background:$white;
-  margin:0;
   margin-top:.5em;
   position: absolute;
   z-index: 100;
@@ -11,14 +10,23 @@
 
 .dropdown-list {
   padding:0;
+  margin:0;
   li {
     list-style-type: none;
     margin:0;
     padding:0;
     
+    &:first-child {
+      a {
+        padding-top:20px;
+      }
+    }
+    
     a {
+      @include flex;
       text-decoration: none;
       color: $gray;
+      padding:1em;
       padding-right: 3em;
       
       &:hover {
@@ -44,4 +52,8 @@
       }
     }
   }
+}
+
+.points {
+  margin-top:10px;
 }

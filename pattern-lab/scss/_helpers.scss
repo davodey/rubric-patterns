@@ -23,23 +23,23 @@
 
 // borders
 .border {
-  border:1px solid $light-gray;
+  border:1px solid $border;
 }
 
 .border-top {
-  border-top:1px solid $light-gray;
+  border-top:1px solid $border;
 }
 
 .border-bottom {
-  border-bottom:1px solid $light-gray;
+  border-bottom:1px solid $border;
 }
 
 .border-left {
-  border-left:1px solid $light-gray;
+  border-left:1px solid $border;
 }
 
 .border-right {
-  border-right:1px solid $light-gray;
+  border-right:1px solid $border;
 }
 
 // margin
@@ -123,6 +123,9 @@
   padding: 0 2em;
 }
 
+.padding-20 {
+  padding:20px;
+}
 // icon buttons
 .in-btn-left {
   margin-left:5px;

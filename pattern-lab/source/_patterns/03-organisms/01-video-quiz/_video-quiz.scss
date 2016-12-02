@@ -1,6 +1,10 @@
-.video-quiz-container {
+.quiz-question-container {
+  display:flex;
   @media(max-width:640px) {
     flex-direction: column;
+  }
+  .video {
+    flex:1;
   }
 }
 
@@ -8,6 +12,8 @@
   padding:4em;
   flex-wrap: wrap;
   text-align: center;
+  background-color:$alt-color;
+  flex:1;
   
   @media (min-width:768px) {
     max-width:50%;
@@ -18,12 +24,16 @@
   position:relative;
   padding:0;
   flex-wrap: wrap;
+  flex:1;
+  border:1px solid $border;
   
   .answer-all {
     position:absolute;
     width:100%;
   }
-  
+  &.finished {
+    border:0;
+  }
   @media (min-width:768px) {
     max-width:50%;
   }

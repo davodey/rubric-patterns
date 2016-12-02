@@ -13,6 +13,11 @@
   font-size: .875em;
   padding:1em;
   box-shadow: -1px 2px 15px -4px rgba(0,0,0,0.42);
+  width:100%;
+  
+  > div {
+    @include flex;
+  }
   
   @media(max-width:768px) {
     box-shadow: -1px 2px 90px -2px rgba(0,0,0,0.42);
@@ -36,10 +41,10 @@
     }
   }
   &.success {
-    border-color:$green;
+    border-color:$beta-three;
     
     label {
-      color:$green
+      color:$beta-three
     }
   }
 }

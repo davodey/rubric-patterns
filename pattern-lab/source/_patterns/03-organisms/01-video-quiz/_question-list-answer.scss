@@ -1,6 +1,28 @@
+.list-question {
+  border-bottom:1px solid $border;
+  
+  a {
+	@include flex;
+	padding:1em;
+  }
+  .green {
+	color:$beta-three;
+  }
+  .alt-color {
+	color:$beta-four;
+  }
+}
 .details {
+  background-color:$beta-one;
+  padding:1em;
+  
+  .detail-label {
+	display:flex;
+	padding-bottom:1em;
+  }
+  
   .green {
 	flex-basis: 25px;
-	color:$green;
+	color:$beta-three;
   }
 }

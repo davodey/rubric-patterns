@@ -9,6 +9,11 @@ $gray: $boring;
 $light-gray: $sidewalk;
 $dark-gray: $gray-no-1; //#4d4d4d
 
+// Beta Colors
+$beta-one: #F5F5F5;
+$beta-two: #6A7070;
+$beta-three: #038238;
+$beta-four: #047A9C;
 
 // Utility Colors
 $red : #D0021B;
@@ -16,7 +21,7 @@ $green: #076826;
 $dark-green: darken($green, 15%);
 $light-green: lighten($green, 70%);
 $disabled: $brightly-lit;
-
+$border: $light-gray;
 $alert: $red;
 
 

@@ -1,0 +1,19 @@
+.video-question {
+  .title {
+	background-color: $beta-one;
+	padding:1em;
+  }
+  .time-stamp {
+	padding: 0 1em;
+  	margin-top:1em;
+	span {
+	  display:flex;
+	  color:$beta-two;
+	  padding-bottom:1em;
+	}
+  }
+  .btn-container {
+	text-align: right;
+	padding:20px;
+  }
+}

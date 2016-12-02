@@ -1,4 +1,5 @@
 .point-worth {
+  @include flex($flex-direction:column);
 	span {
 	  margin-top: 1em;
 	  font-size: .875rem;
