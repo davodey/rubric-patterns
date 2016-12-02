@@ -1,0 +1,47 @@
+// Buttons
+//
+
+$pe-btn-small-height    : 28px !default;
+$pe-btn-small-font-size : 14px !default;
+$pe-btn-small-padding   : 0px 12px 0px 12px !default;
+$pe-btn-small-line-height: 18px !default;
+
+$pe-btn-standard-border-radius : 2px !default;
+$pe-btn-standard-font-size     : 14px !default;
+$pe-btn-standard-line-height   : 18px !default;
+$pe-btn-standard-padding       : 0px 12px 0px 12px !default;
+$pe-btn-standard-height        : 28px !default;
+
+$pe-btn-large-border-radius : 2px !default;
+$pe-btn-large-font-size     : 16px !default;
+$pe-btn-large-line-height   : 20px !default;
+$pe-btn-large-padding       : 0px 20px 0px 20px !default;
+$pe-btn-large-height        : 36px !default;
+$pe-btn-large-padding       : 0 12px !default;
+
+$pe-btn-xlarge-height      : 44px !default;
+$pe-btn-xlarge-font-size   : 16px !default;
+$pe-btn-xlarge-line-height : 20px !default;
+$pe-btn-xlarge-padding     : 0px 20px 0px 20px !default;
+
+$pe-btn-primary-bg            : #047A9C !default;
+$pe-btn-primary-text          : white !default;
+//$pe-btn-primary-font-weight   : $pe-label-inverse-font-weight !default;
+$pe-btn-primary-hover-bg      : #005A70 !default;
+$pe-btn-primary-hover-text    : white !default;
+$pe-btn-primary-disabled-bg   : #E9E9E9 !default;
+$pe-btn-primary-disabled-text : #C7C7C7 !default;
+
+$pe-btn-default-bg            : #D9D9D9 !default;
+$pe-btn-default-text          : #252525 !default;
+//$pe-btn-default-font-weight   : $pe-label-inverse-font-weight !default;
+$pe-btn-default-hover-bg      : #C7C7C7 !default;
+$pe-btn-default-hover-text    : #252525 !default;
+$pe-btn-default-disabled-bg   : #E9E9E9 !default;
+$pe-btn-default-disabled-text : #C7C7C7 !default;
+
+$pe-btn-cta-bg          : #FFB81C !default;
+$pe-btn-cta-text        : #252525 !default;
+//$pe-btn-cta-font-weight : $pe-label-inverse-font-weight !default;
+$pe-btn-cta-hover-bg    : #FF9A19 !default;
+$pe-btn-cta-hover-text  : #252525 !default;

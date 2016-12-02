@@ -1,0 +1,16 @@
+@import './variables';
+@import './mixins';
+@import '../typography/type';
+
+@include textInput();
+@include textInputLabel();
+
+@include textInputError();
+@include textInputLabelError();
+
+@include textInputReadOnly();
+
+@include textInputDisabled();
+@include textInputLabelDisabled();
+
+@include clearIEPasswordIcon();
