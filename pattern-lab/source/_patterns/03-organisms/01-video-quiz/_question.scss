@@ -1,11 +1,18 @@
 .video-question {
+  height:100%;
+  @include flex($align-items: flex-start, $flex-direction:column);
   .title {
 	background-color: $beta-one;
 	padding:1em;
+	padding-left:2em;
+	width:100%;
   }
   .time-stamp {
-	padding: 0 1em;
-  	margin-top:1em;
+	padding: 0 2em;
+  	padding-top:1em;
+	border-right:1px solid $border;
+	border-left:1px solid $border;
+	height:100%;
 	span {
 	  display:flex;
 	  color:$beta-two;
@@ -13,7 +20,11 @@
 	}
   }
   .btn-container {
+	width:100%;
+	border:1px solid $border;
+	border-top:0;
 	text-align: right;
 	padding:20px;
+	align-self: flex-end;
   }
 }
