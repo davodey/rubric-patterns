@@ -7083,18 +7083,24 @@ h2 {
 /* line 23, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
 .question-content {
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex: 1;
       flex: 1;
+  border: 1px solid #b3b3b3;
+  border-top: 0;
 }
-/* line 29, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
+/* line 33, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
 .question-content .answer-all {
   position: absolute;
   width: 100%;
 }
-/* line 33, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
+/* line 37, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_video-quiz.scss */
 .question-content.finished {
   border: 0;
 }
@@ -7176,16 +7182,22 @@ h2 {
 /* line 1, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .overlay {
   position: absolute;
-  padding: 2em;
   width: 100%;
   height: 100%;
-  left: 50%;
-  top: 0%;
-  transform: translateX(-50%);
+  left: 0;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
-/* line 12, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
+/* line 11, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .overlay .modal {
   display: -ms-flexbox;
   display: flex;
@@ -7196,6 +7208,7 @@ h2 {
   -ms-flex-direction: column;
       flex-direction: column;
   position: relative;
+  top: -25%;
 }
 /* line 16, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .overlay .modal .btn-container {
@@ -7206,34 +7219,14 @@ h2 {
 
 /* line 24, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .modal-content {
-  margin-top: 15%;
-  width: 50%;
+  margin-top: 0;
+  width: 100%;
   box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.42);
   z-index: 3;
-  position: absolute;
   background: #ffffff;
 }
-@media (max-width: 1280px) {
-  /* line 24, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
-  .modal-content {
-    margin-top: 25%;
-    width: 75%;
-  }
-}
-@media (max-width: 768px) {
-  /* line 24, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
-  .modal-content {
-    margin-top: 45%;
-  }
-}
-@media (max-width: 640px) {
-  /* line 24, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
-  .modal-content {
-    margin-top: 55%;
-  }
-}
 
-/* line 44, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
+/* line 33, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .modal-title {
   display: -ms-flexbox;
   display: flex;
@@ -7247,7 +7240,7 @@ h2 {
   padding: 1em;
   border-bottom: 1px solid #b3b3b3;
 }
-/* line 49, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
+/* line 38, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_modal.scss */
 .modal-title button {
   background: none;
   border: none;
@@ -7380,7 +7373,8 @@ h2 {
 
 /* line 1, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question {
-  height: 100%;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: start;
@@ -7390,33 +7384,27 @@ h2 {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-/* line 4, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 5, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .title {
   background-color: #F5F5F5;
   padding: 1em;
   padding-left: 2em;
-  width: 100%;
+  width: 100.2%;
 }
-/* line 10, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 11, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .time-stamp {
   padding: 0 2em;
-  padding-top: 1em;
-  border-right: 1px solid #b3b3b3;
-  border-left: 1px solid #b3b3b3;
-  height: 100%;
+  margin-top: 1em;
 }
-/* line 16, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 14, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .time-stamp span {
   display: -ms-flexbox;
   display: flex;
   color: #6A7070;
   padding-bottom: 1em;
 }
-/* line 22, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 20, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .btn-container {
-  width: 100%;
-  border: 1px solid #b3b3b3;
-  border-top: 0;
   text-align: right;
   padding: 20px;
   -ms-flex-item-align: end;

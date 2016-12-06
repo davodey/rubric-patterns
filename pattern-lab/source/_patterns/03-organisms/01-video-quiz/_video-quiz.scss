@@ -22,9 +22,13 @@
 
 .question-content {
   position:relative;
+  display:flex;
+  flex-direction: column;
   padding:0;
   flex-wrap: wrap;
   flex:1;
+  border:1px solid $border;
+  border-top:0;
   
   .answer-all {
     position:absolute;
