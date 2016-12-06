@@ -1,3 +1,8 @@
+.main-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .video-quiz-container {
 	.information-container, .dropdown-container {
 	  padding: 3em;
@@ -19,6 +24,7 @@
 		padding:1em;
 	  }
 	}
+  
   	.quiz-container {
 	  padding:2em 3em;
 	  padding-top:.5em;

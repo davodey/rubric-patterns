@@ -7277,13 +7277,13 @@ h2 {
   background-color: #F5F5F5;
   padding: 1em;
 }
-/* line 19, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question-list-answer.scss */
+/* line 20, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question-list-answer.scss */
 .details .detail-label {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 1em;
 }
-/* line 24, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question-list-answer.scss */
+/* line 25, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question-list-answer.scss */
 .details .green {
   -ms-flex-preferred-size: 25px;
       flex-basis: 25px;
@@ -7384,26 +7384,30 @@ h2 {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-/* line 5, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 6, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+.video-question label {
+  font-size: 14px;
+}
+/* line 10, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .title {
   background-color: #F5F5F5;
   padding: 1em;
   padding-left: 2em;
   width: 100.2%;
 }
-/* line 11, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 16, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .time-stamp {
   padding: 0 2em;
   margin-top: 1em;
 }
-/* line 14, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 19, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .time-stamp span {
   display: -ms-flexbox;
   display: flex;
   color: #6A7070;
   padding-bottom: 1em;
 }
-/* line 20, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
+/* line 25, pattern-lab/source/_patterns/03-organisms/01-video-quiz/_question.scss */
 .video-question .btn-container {
   text-align: right;
   padding: 20px;
@@ -7645,52 +7649,58 @@ h2 {
   min-width: 228px;
 }
 
-/* line 2, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+/* line 1, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+.main-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* line 7, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
 .video-quiz-container .information-container, .video-quiz-container .dropdown-container {
   padding: 3em;
   padding-bottom: 0;
 }
 @media (max-width: 640px) {
-  /* line 2, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  /* line 7, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
   .video-quiz-container .information-container, .video-quiz-container .dropdown-container {
     padding: 2em 0 0 0;
   }
 }
-/* line 10, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+/* line 15, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
 .video-quiz-container .success-alert {
   margin: 0 1em;
   padding: 0 2em;
 }
-/* line 15, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+/* line 20, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
 .video-quiz-container .dropdown-container {
   text-align: right;
   padding-top: 0;
 }
 @media (max-width: 640px) {
-  /* line 15, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  /* line 20, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
   .video-quiz-container .dropdown-container {
     padding: 1em;
   }
 }
-/* line 22, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+/* line 28, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
 .video-quiz-container .quiz-container {
   padding: 2em 3em;
   padding-top: .5em;
 }
 @media (max-width: 640px) {
-  /* line 22, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  /* line 28, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
   .video-quiz-container .quiz-container {
     padding: 1em;
   }
 }
 @media (max-width: 640px) {
-  /* line 31, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  /* line 37, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
   .video-quiz-container .col, .video-quiz-container .row {
     border: 0;
   }
 }
 @media (max-width: 768px) {
-  /* line 1, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
+  /* line 6, pattern-lab/source/_patterns/05-templates/01-video-quiz/_main.scss */
   .video-quiz-container {
     -ms-flex-direction: column;
         flex-direction: column;

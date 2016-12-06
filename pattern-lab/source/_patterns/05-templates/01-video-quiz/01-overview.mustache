@@ -1,21 +1,24 @@
 {{> organisms-header }}
-<section class="score-container">
-    {{> organisms-quiz-score}}
-    {{#alert}}
-        <div class="success-alert ">
-            {{> organisms-success}}
-        </div>
-    {{/alert}}
-</section>
-<div class="video-quiz-container">
-    {{#dropdown-menu}}
-        <div class="dropdown-container">
-            {{>organisms-dropdown-options}}
-        </div>
-    {{/dropdown-menu}}
-    <section class="quiz-container">
-        {{> organisms-video-quiz }}
+<div class="main-wrapper">
+    <section class="score-container">
+        {{> organisms-quiz-score}}
+        {{#alert}}
+            <div class="success-alert ">
+                {{> organisms-success}}
+            </div>
+        {{/alert}}
     </section>
+    <div class="video-quiz-container">
+        {{#dropdown-menu}}
+            <div class="dropdown-container">
+                {{>organisms-dropdown-options}}
+            </div>
+        {{/dropdown-menu}}
+        <section class="quiz-container">
+            {{> organisms-video-quiz }}
+        </section>
+    </div>
 </div>
+
 
 

@@ -2,6 +2,11 @@
   flex:1 0 auto;
   //padding-bottom:2em;
   @include flex($align-items: flex-start, $flex-direction:column);
+  
+  label {
+	font-size:14px;
+  }
+  
   .title {
 	background-color: $beta-one;
 	padding:1em;
