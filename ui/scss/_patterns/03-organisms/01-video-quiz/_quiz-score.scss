@@ -1,0 +1,8 @@
+.quiz-score {
+  @media(max-width:768px) {
+	flex-direction: column;
+  }
+  .overview {
+	color:$beta-two;
+  }
+}

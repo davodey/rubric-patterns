@@ -1,0 +1,29 @@
+// Primary Colors
+$blue: $basic-blue;
+$light-blue: lighten($sky-blue, 10%);
+$dark-blue: #047a9c;
+$alt-color: #095a6f;
+
+// Neutral Colors
+$gray: $boring;
+$light-gray: $sidewalk;
+$dark-gray: $gray-no-1; //#4d4d4d
+
+// Beta Colors
+$beta-one: #F5F5F5;
+$beta-two: #6A7070;
+$beta-three: #038238;
+$beta-four: #047A9C;
+
+// Utility Colors
+$red : #D0021B;
+$green: #076826;
+$dark-green: darken($green, 15%);
+$light-green: lighten($green, 70%);
+$disabled: $brightly-lit;
+$border: $light-gray;
+$alert: $red;
+
+
+// Measurements
+$unit: 1em;

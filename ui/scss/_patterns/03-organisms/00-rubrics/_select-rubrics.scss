@@ -1,0 +1,102 @@
+.select-component {
+  max-width:320px;
+  height: 675px;
+  background:$white;
+}
+
+.close-btn {
+   margin:$unit;
+}
+
+.title-info {
+  @include flex-center;
+  padding-bottom:$unit;
+  border-bottom:1px solid $gray;
+}
+
+.create-rubric {
+  @include flex-center;
+  padding-top:$unit * 1.5;
+  padding-bottom:$unit;
+  
+  button {
+    min-width:228px;
+  }
+}
+
+.text-decoration {
+  display:flex;
+  padding:0 $unit;
+}
+
+.filter-rubrics {
+  @include flex-center;
+  @include fontSize(18px);
+  padding:$unit;
+  justify-content: space-between;
+  color:$gray;
+  
+}
+
+.select-rubrics {
+  @include max-height(188px);
+  margin:0 $unit;
+  border: 1px solid $gray;
+  
+  &::-webkit-scrollbar {
+    width: $unit;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color:$white;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color:$light-gray;
+  }
+  
+  ul {
+    margin:0;
+    
+    > li {
+      a {
+        display:inline-block;
+        color:$dark-gray;
+        width:100%;
+        padding:5px $unit;
+        text-decoration: none;
+      
+        &:hover {
+          @extend .selected;
+          color:$dark-gray;
+        }
+        &:focus {
+          @extend .selected;
+          color:$dark-gray;
+        }
+      }
+    }
+  }
+}
+
+.actions {
+  @include flex-center;
+  padding:0 $unit;
+  
+  button {
+    &:disabled {
+      color:$gray;
+    }
+  }
+}
+
+.add-rubric {
+  @include flex-center;
+  padding-top:16px;
+  
+  button {
+    padding:0;
+    min-width:228px;
+  }
+}

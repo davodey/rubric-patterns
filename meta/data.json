@@ -1,0 +1,41 @@
+{
+  "id": "",
+  "href": "#",
+  "readonly": "",
+  "disabled": "",
+
+  "buttonText": "Do Stuff",
+
+  "iconName": "search",
+
+  "labelValue": "Default label value",
+  "labelError": "",
+  "inputValue": "",
+  "inputError": "",
+  "placeholder": "",
+
+  "checked": "",
+  "checkLabel": "checkbox",
+
+  "radioGroup": "",
+  "radioLabel": "radio button",
+
+  "textareaLabel": "Textarea",
+  "textareaName": "Textarea Name",
+  "textareaRows": "",
+  "textareaCols": "",
+  "textareaValue": "",
+
+  "optionOneDisabled": "",
+  "optionOneSelected": "",
+  "optionOneValue": "Option One",
+
+  "optionTwoDisabled": "",
+  "optionTwoSelected": "",
+  "optionTwoValue": "Option Two",
+
+  "optionThreeDisabled": "",
+  "optionThreeSelected": "",
+  "optionThreeValue": "Option Three"
+
+}

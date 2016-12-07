@@ -1,0 +1,21 @@
+.custom-select{
+  @include font-size(18px);
+  display:flex;
+  
+  .icon {
+	order:2;
+  }
+  
+  select {
+	cursor:pointer;
+  }
+  
+  .select-container{
+	width:100px;
+	select {
+	  appearance: none;
+	  border:0;
+	  background:$white;
+	}
+  }
+}

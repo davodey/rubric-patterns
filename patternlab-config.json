@@ -56,8 +56,8 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
-  "patternExportPatternPartials": ["pages-landing", "pages-first-question", "pages-first-answer", "pages-error", "pages-modal", "pages-success", "pages-expanded", "organisms-information", "organisms-question", "organisms-alert", "organisms-modal", "organisms-success", "organisms-question-list-answer", "organisms-answer-list", ],
-  "patternExportDirectory": "./pattern_exports/",
+  "patternExportPatternPartials": ["pages-landing", "pages-first-question", "pages-first-answer", "pages-error", "pages-modal", "pages-success", "pages-expanded", "organisms-information", "organisms-question", "organisms-alert", "organisms-modal", "organisms-success", "organisms-question-list-answer", "organisms-answer-list"],
+  "patternExportDirectory": "../../dist/",
   "cacheBust": true,
   "starterkitSubDir": "dist",
   "outputFileSuffixes": {
