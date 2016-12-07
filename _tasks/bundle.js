@@ -19,7 +19,7 @@ gulp.task('bundle', function() {
     gulp.src("ui/images/**")
         .pipe(gulp.dest('dest/images/'));
 
-    return sass('ui/scss/*.scss', {
+    return sass('pattern-lab/scss/*.scss', {
         style: 'compressed',
         lineNumbers: false
     })

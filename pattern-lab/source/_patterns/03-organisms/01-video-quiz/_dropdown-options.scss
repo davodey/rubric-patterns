@@ -30,7 +30,7 @@
       padding-right: 3em;
       
       &:hover {
-        background-color: $alt-color;
+        background-color: $dark-blue;
         color:$white;
         cursor: pointer;
       }
@@ -45,9 +45,13 @@
       }
       &.complete {
         &:hover {
-          background:none;
-          color:$gray;
-          cursor:default;
+          background-color: $dark-blue;
+          color:$white;
+          cursor:pointer;
+          
+          .green {
+            color: $white;
+          }
         }
       }
     }
