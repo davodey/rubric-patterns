@@ -6,12 +6,11 @@
 // Paths to assets. Override these variables if you change the location(s)
 // of bundled assets.
 
-$pe-icons-path: '/fonts/' !default;
+$pe-icons-path: '../fonts/' !default;
 // Icon font filename without the extension.
 $pe-icons-name: 'pearson-fa' !default;
 
 $pe-images-path: '/images/';
-$pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 
 
 // Colors
@@ -34,7 +33,6 @@ $pe-colors: (
   full-moon: #424242,
   asphalt: #3f3f3f,
   smoke-gray: #545454,
-  sandy-gray: #6d6d6d,
 
   // colors
   highlighter: #fdec2e,
@@ -43,79 +41,19 @@ $pe-colors: (
   basic-blue: #107aca,
   sea: #0c5d99,
   deep-sea: #0a4d80,
-  sky-blue: #9dc0db,
-  firetruck: #d0021b,
-  spruce: #076826,
-  blue-milk: #d9eeff
+  sky-blue: #9dc0db
 );
 
 // Responsive breakpoints
 //
 
 $pe-responsive-breakpoints: (
-  xs: (min: 1px,    max: 479px),
+  xs: (min: 0,      max: 479px),
   sm: (min: 480px,  max: 767px),
   md: (min: 768px,  max: 1023px),
   lg: (min: 1024px, max: 1279px),
   xl: (min: 1280px)
 ) !default;
-
-//Grid
-//
-
-$pe-columns             : 12 !default;
-
-$pe-columns-min-height  : 1px;
-
-$pe-container-max-width : 1140px;
-
-$pe-container-margin: (
-  xl : 40px,
-  lg : 40px,
-  md : 20px,
-  sm : 20px,
-  xs : 10px
-);
-
-$pe-gutter-widths: (
-  xl : 40px,
-  lg : 40px,
-  md : 40px,
-  sm : 20px,
-  xs : 10px
-);
-
-// Templates
-//
-
-$pe-static-template-width-breakpoints : (
-  sm : 480px,
-  lg : 800px
-);
-
-$pe-template__static-large-xs-width        : percentage(12 / $pe-columns);
-$pe-template__static-large-md_and_sm-width : percentage(10 / $pe-columns);
-$pe-template__static-large-lg_and_xl-width : 800px;
-
-$pe-template__double--sidebar-width           : percentage(4 / $pe-columns);
-$pe-template__double--main-width              : percentage(8 / $pe-columns);
-$pe-template__double-horizontal-margin-height : 40px;
-
-$pe-template__static-small-xs-width : percentage(12 / $pe-columns);
-$pe-template__static-small-sm-width : percentage(10 / $pe-columns);
-$pe-template__static-small-lg_and_xl_and_md-width : 480px;
-
-$pe-template__small-gap : 40px;
-$pe-template__large-gap : 80px;
-
-
-
-// Presentation Strategies
-//
-
-$pe-strategy__small-gap : 40px;
-$pe-strategy__large-gap : 80px;
-
 
 // Type
 //
@@ -273,11 +211,11 @@ $pe-input-small-padding: 0 10px !default;
 $pe-input-small-font-size: $pe-label-font-size !default;
 $pe-input-small-line-height: $pe-label-line-height !default;
 $pe-input-readonly-bg: pe-color(off-white) !default;
-$pe-input-error-border: solid 1px pe-color(firetruck) !default;
-$pe-input-error-text-color: pe-color(firetruck);
-$pe-input-error-outline: 1px solid pe-color(firetruck);
-$pe-input-error-box-shadow: 0px 0px 4px pe-color(firetruck) !default;
-$pe-input-placeholder-color: pe-color(sandy-gray) !default;
+$pe-input-error-border: solid 1px #d0021b !default;
+$pe-input-error-text-color: #d0021b;
+$pe-input-error-outline: 1px solid #d0021b;
+$pe-input-error-box-shadow: 0px 0px 4px #d0021b !default;
+$pe-input-placeholder-color: #6d6d6d !default;
 $pe-input-placeholder-text: italic !default;
 
 
@@ -363,6 +301,7 @@ $pe-header-link-hover-color: pe-color(off-white) !default;
 
 $pe-header-brand-font-size: 1.25rem !default;
 
+$pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 $pe-header-logo-sprite-height: 16px !default;
 $pe-header-logo-margin-x: 14px !default;
 
@@ -516,9 +455,3 @@ $pe-calendar-dates-max-width: 40px;
 $pe-calendar-dates-min-width: 40px;
 $pe-calendar-dates-max-height: 35px;
 $pe-calendar-dates-min-height: 35px;
-
-
-// progressbar
-$pe-progressbar-bg: pe-color(brightly-lit);
-$pe-progressbar-border: 1px solid pe-color(royal-navy);
-$pe-progressbar-value: pe-color(royal-navy);

@@ -6662,21 +6662,22 @@ h2 {
       justify-content: space-between;
   -ms-flex-direction: row;
       flex-direction: row;
+  padding: 1em 0;
 }
 
-/* line 5, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
+/* line 6, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
 .CircularProgressbar .CircularProgressbar-path {
   stroke: #047a9c;
   stroke-linecap: square;
   transition: stroke-dashoffset 0.5s ease 0s;
 }
 
-/* line 11, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
+/* line 12, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
 .CircularProgressbar .CircularProgressbar-trail {
   stroke: #ffb81c;
 }
 
-/* line 15, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
+/* line 16, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
 .CircularProgressbar .CircularProgressbar-text {
   fill: #047a9c;
   font-size: 24px;
@@ -6684,7 +6685,7 @@ h2 {
   text-anchor: middle;
 }
 
-/* line 22, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
+/* line 23, pattern-lab/source/_patterns/02-molecules/02-video-quiz/_quiz-score.scss */
 .progress-container {
   width: 90px;
   margin-right: 1em;

@@ -13,9 +13,7 @@
 
     <div class="demo-container" data-header-mode="Basic"></div>
 
-    <!--TODO use react component https://www.npmjs.com/package/@pearson-components/app-header -->
-
-    <script src="./js/app-header.js"></script> 
+    <!-- TODO Use react component for header  https://www.npmjs.com/package/@pearson-components/app-header -->  <script src="./js/app-header.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.js?features=CustomEvent"></script>
     <script>
         // Uses the native CustomEvent constructor that no version of IE supports (MS Edge does!).
@@ -89,11 +87,11 @@
             <div class="quiz-score flex align-center justify-between">
                 <div class="score">
                     <div class="quiz-score">
-                        <div class="percentage">
-                            <img src="./images/percentage.png">
+                        <div id="root" class="percentage">
                         </div>
                         <h2>Your Quiz Score !</h2>
                     </div>
+                    <script src="./js/quiz-score.js"></script>
                 </div>
                 <div class="overview">
                     <span class="padding">5 Questions / 3 Correct / 2 Incorrect / Score - 75%</span>

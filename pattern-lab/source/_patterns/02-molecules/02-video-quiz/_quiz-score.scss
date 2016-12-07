@@ -1,5 +1,6 @@
 .quiz-score {
   @include flex;
+  padding:1em 0;
 }
 
 .CircularProgressbar .CircularProgressbar-path {

@@ -1,3 +1,26 @@
 .quiz-score {
   @include flex;
+  padding:1em 0;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #047a9c;
+  stroke-linecap: square;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #ffb81c;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #047a9c;
+  font-size: 24px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.progress-container {
+  width:90px;
+  margin-right: 1em;
 }
