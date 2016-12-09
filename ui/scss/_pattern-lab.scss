@@ -1,4 +1,4 @@
-// THIS FILE SHOULD NOT BE EDITED
+
 @mixin respond-fluid() {
   width:100%;
   
@@ -55,6 +55,9 @@ $highlighter: pe-color(highlighter);
 $firetruck: pe-color(firetruck);
 $spruce: pe-color(spruce);
 
+// Other
+$highlighter: pe-color(highlighter);
+
 
 // swatch container
 .swatch {
@@ -110,6 +113,7 @@ $spruce: pe-color(spruce);
 .hairline-gray-bg {
   background-color: $hairline-gray;
 }
+
 
 .sandy-gray-bg {
   background-color: $sandy-gray;
@@ -191,6 +195,8 @@ $spruce: pe-color(spruce);
 }
 
 .presentation {
-  padding:25px;
-  height:1280px;
+  padding: 25px;
+  height: 1280px;
 }
+
+.ux-boilerplate:before{content: "• "; color:deepskyblue !important;}.elements:before{content: "• "; color:greenyellow !important;}.custom:before{content: "• "; color:hotpink !important;}.compounds:before{content: "• "; color:mediumpurple !important;}.inprogress:before{content: "• "; color:#ff4136 !important;}

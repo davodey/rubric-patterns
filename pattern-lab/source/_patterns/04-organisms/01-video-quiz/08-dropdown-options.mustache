@@ -1,0 +1,75 @@
+<div class="pos-relative">
+    {{> atoms-btn-dropdown }}
+    <div id="dropdown" class="dropdown margin hide">
+        <ul class="dropdown-list">
+            <li>
+                <a href="#/" class="padding complete">
+                    <span>1.</span>
+                    <div>
+                        <span class="pe-icon--check green" aria-hidden="true"></span>
+                        <span>Complete</span>
+                    </div>
+
+                </a>
+            </li>
+            <li>
+                <a href="#/" class="complete">
+                    <span>2.</span>
+                    <div>
+                        <span class="pe-icon--check green" aria-hidden="true"></span>
+                        <span>Complete</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#/">
+                    <span>3.</span>
+                    <div>
+                        <span>Incomplete</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#/">
+                    <span>4.</span>
+                    <div>
+                        <span>Incomplete</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#/" class="disabled">
+                    <span>5.</span>
+                    <span></span>
+                    <span>Incomplete</span>
+                </a>
+            </li>
+            <li>
+                <a href="#/" class="disabled">
+                    <span>6.</span>
+                    <span></span>
+                    <span>Incomplete</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="points">
+        <span>Worth 1 point</span>
+    </div>
+</div>
+
+<!-- TODO turn this into a react component -->
+<script>
+    function myfunc() {
+        var target = document.getElementById('dropdown');
+        var className = target.getAttribute("class");
+        console.log(className);
+        if(className=="dropdown margin hide") {
+            target.className = "dropdown margin";
+        }
+        else{
+            target.className = "dropdown margin hide";
+        }
+    }
+</script>

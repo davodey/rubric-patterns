@@ -1,2 +1,10 @@
-{{> elements-input:pe-input--disabled(id: '7', inputValue: 'Disabled', disabled: 'disabled')}}
-{{> elements-input:pe-input--disabled(id: '8', placeholder: 'Placeholder Disabled', disabled: 'disabled')}}
+<div class="pe-input pe-input--disabled">
+    <label for="7">Default label value <span class="pe-error-text"></span></label>
+    <input type="text" id="7" value="Disabled" placeholder=""  disabled>
+    <p id="i9-error" class="pe-error-text"></p>
+</div>
+<div class="pe-input pe-input--disabled">
+    <label for="8">Default label value <span class="pe-error-text"></span></label>
+    <input type="text" id="8" value="" placeholder="Placeholder Disabled"  disabled>
+    <p id="i9-error" class="pe-error-text"></p>
+</div>

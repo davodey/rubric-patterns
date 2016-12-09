@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/style.css" media="all" />
+
+</head>
+
+<body>
+
+    <div class="demo-container" data-header-mode="Basic"></div>
+    
+    <script src="../../js/app-header.js"></script> 
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=CustomEvent"></script>
+    <script>
+        // Uses the native CustomEvent constructor that no version of IE supports (MS Edge does!).
+        // See usage of polyfill-customevent.js to work in IE.
+    
+        document.addEventListener('DOMContentLoaded', function() {
+    
+            var element = document.querySelector('.demo-container');
+            var config = {
+                user: { givenName: 'XXXXXXXXXXXXXXXX' },
+                mode: 'Basic',
+                courseItems: [
+                    { text: 'Physics', href: 'https://example.com/physics' },
+                    { text: 'Chemistry', href: 'https://example.com/physics' }
+                ],
+                courseNav: {
+                    heading: { text: 'Physics', href: 'https://example.com/physics' },
+                    items: [
+                        { text: 'Performance', href: 'https://example.com/performance' },
+                        { text: 'Assessments', href: 'https://example.com/assessments' }
+                    ]
+                },
+                onLogin: function () {
+                    alert('You signed in');
+                },
+                onLogout: function () {
+                    alert('You signed out');
+                }
+    
+            };
+    
+            document.dispatchEvent(new CustomEvent('o.DOMContentLoaded', {
+                detail: {
+                    element: element,
+                    config: config
+                }
+            }));
+            document.dispatchEvent(new CustomEvent('o.InitContextualHelp'));
+    
+            setTimeout(function() {
+    
+                config.user = { givenName: 'Casey' };
+    
+                document.dispatchEvent(new CustomEvent('o.DOMContentLoaded', {
+                    detail: {
+                        element: element,
+                        config: config
+                    }
+                }));
+            }, 2000);
+    
+    
+    
+            // Event Listeners
+    
+            // Help menu
+            document.addEventListener('oAppHeader.help.toggle', function () {
+                console.log('oAppHeader.help.toggle');
+            });
+    
+            // Sign out event
+            document.addEventListener('oAppHeader.logout', function () {
+                console.log('oAppHeader.logout');
+            });
+    
+        });
+    </script>
+    <script src="../../js/components/contextual-help/build/dist.contextual-help.js"></script>
+    <script type="application/json" data-o-contextual-help-config>
+        {
+            "helpTopics": [
+                "console/student/freetrial",
+                "console/student/studentresources",
+                "console/student/contactsupport"
+            ]
+        }
+    </script>
+    <div class="main-wrapper">
+        <div class="video-quiz-container">
+            <section class="information-container">
+                <div class="information">
+                    <div class="row top">
+                        <div class="col title">
+                            <span><span class="bold">Title:</span> Learning The Keys To Physical Delivery Skills</span>
+                        </div>
+                        <div class="col point">
+                            <span class="bold">15 Points</span>
+                        </div>
+                        <div class="col due-date">
+                            <span><span class="bold">Due: </span>Oct 18, 2016 - Oct 30, 2016</span>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <div class="summary">
+                            <span><span class="bold">Learning Objective:</span> To develop knowledge and skills related to the student's understanding of rehearsal techniques, and his/her abilities in the ensemble performance as well as the knowledge of
+                            music literature and conducting skills.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="summary">
+                            <span><span class="bold">Description: </span>As you watch the video, quiz questions will appear. You must answer all the questions to submit the quiz.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="quiz-container">
+                <div class="quiz-question-container">
+                    <div class="video">
+                        <div class="video-container">
+                            <iframe src="http://www.youtube.com/embed/dFVxGRekRSg" frameborder="0" width="560" height="315"></iframe>
+                        </div>
+                    </div>
+                    <div class="questions">
+                        <div class="begin-quiz">
+                            <div>
+                                <h2>Select the play button to begin quiz</h2>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+
+//======textInput====================
+
+$textInput-height : 52px;
+
+$textInput-padding : 8px 0px 10px 0px;
+
+$textInput-animation : 0.2s ease all;
+
+$textInput-width        : 100%;
+$textInput-border-reset : none;
+
+$textInput-border-bottom       : 1px;
+$textInput-border-bottom-style : solid;
+$textInput-border-bottom-color : #6A7070;
+
+$textInput-value-color     : #252525;
+$textInput-value-font-size : 14pt;
+
+$textInput-label-color     : #6A7070;
+$textInput-label-font-size : 12pt;
+
+$textInput-placeholder-color     : #C7C7C7;
+$textInput-placeholder-font-size : 14pt;
+
+//======textInput-Error==============
+
+$textInput-error-border-bottom       : 1px;
+$textInput-error-border-bottom-style : solid;
+$textInput-error-border-bottom-color :#DB0020;
+
+$textInput-error-color           : #252525;
+
+$textInput-error-font-size       : 14pt;
+
+$textInput-error-label-color     :#DB0020;
+$textInput-error-label-font-size :12pt;
+
+//=======textInput-focus-error=======
+
+$textInput-error-focus-border-bottom       : 4px;
+$textInput-error-focus-border-bottom-style : solid;
+$textInput-error-focus-border-bottom-color : #DB0020;
+
+$textInput-error-focus-color           : #252525;
+$textInput-error-focus-font-size       : 14pt;
+$textInput-error-focus-label-color     : #DB0020;
+$textInput-error-focus-label-font-size : 12pt;
+
+//======focus=========================
+
+$textInput-focus-border-bottom       : 4px;
+$textInput-focus-border-bottom-style : solid;
+$textInput-focus-border-bottom-color : #047A9C;
+
+$textInput-focus-text-color     : #252525;
+$textInput-focus-text-font-size : 14pt;
+
+$textInput-focus-label-color     : #047A9C;
+$textInput-focus-label-font-size : 14pt;
+
+
+//======disable=======================
+$textInput-disable-background-color    : #fff;
+$textInput-disable-border-bottom       : 1px;
+$textInput-disable-border-bottom-style : solid;
+$textInput-disable-border-bottom-color : #C7C7C7;
+
+$textInput-disable-text-color     : #C7C7C7;
+$textInput-disable-text-font-size : 14pt;
+
+//=======read-only====================
+
+$textInput-readonly-border         : 0;
+
+$textInput-readonly-text-color     : #252525;
+$textInput-readonly-text-font-size : 14pt;
+
+$textInput-readonly-label-color     : #6A7070;
+$textInput-readonly-label-font-size : 12pt;

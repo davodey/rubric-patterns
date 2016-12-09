@@ -1,0 +1,27 @@
+<div class="filter-rubrics">
+    <span class="pe-title pe-title--large gray font-sz-18">View:</span>
+    <div class="custom-select">
+        <div class="icon">
+            <span class="pe-icon--chevron-down blue font-sz-17 " aria-hidden="true"></span>
+        </div>
+        <div class="select-container dark-gray">
+            <select>
+                <option>My Rubrics</option>
+                <option>Model Rubrics</option>
+                <option selected>All Rubrics</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="select-rubrics">
+    <ul {{{id}}} class="pe-list pe-list--unstyled" role="tablist">
+        {{# listItems.seven }}
+        <li role="tab"><a href="#">{{ title }}</a> </li>
+        {{/ listItems.seven }}
+    </ul>
+</div>
+<div class="actions">
+    <button class="pe-btn pe-btn--link pe-btn--large action-btn" disabled>Edit</button>
+    <button class="pe-btn pe-btn--link pe-btn--large action-btn" disabled>Copy</button>
+    <button class="pe-btn pe-btn--link pe-btn--large action-btn red" disabled>Delete</button>
+</div>

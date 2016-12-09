@@ -1,0 +1,29 @@
+<div class="quiz-question-container">
+    <div class="video">
+        {{> atoms-video }}
+    </div>
+    {{#start}}
+        <div class="questions">
+            {{> molecules-begin-quiz }}
+        </div>
+    {{/start}}
+    {{#question}}
+        <div class="question-content">
+            {{>organisms-question}}
+        </div>
+    {{/question}}
+    {{#error}}
+        <div class="question-content">
+            {{!--<div class="answer-all">--}}
+                {{!--{{> organisms-alert}}--}}
+            {{!--</div>--}}
+            {{>organisms-question}}
+        </div>
+    {{/error}}
+    {{#success}}
+        <div class="question-content finished">
+            {{>organisms-answer-list}}
+        </div>
+    {{/success}}
+</div>
+

@@ -1,0 +1,13 @@
+.begin-quiz {
+  background-color:$alt-color;
+  @include flex($justify-content: center, $flex-direction:column);
+  
+  > div {
+    flex:1;
+    @include flex($justify-content: center, $flex-direction:column);
+  }
+  
+  h2 {
+    color:$white;
+  }
+}

@@ -3,3 +3,7 @@
 node_modules/
 public/
 dist/
+.DS_Store
+pattern-lab/public
+dest/
+.zip

@@ -7,6 +7,6 @@ gulp.task('ftp', function () {
             host: '10.72.9.195',
             user: 'root',
             pass: 'hnapoi4716&&9012',
-            remotePath: '/home/webroot/elements-patternlab'
+            remotePath: '/home/webroot/rubrics-component'
         }));
 });

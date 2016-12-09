@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/style.css" media="all" />
+
+</head>
+
+<body>
+
+    <div class="demo-container" data-header-mode="Basic"></div>
+    
+    <script src="../../js/app-header.js"></script> 
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=CustomEvent"></script>
+    <script>
+        // Uses the native CustomEvent constructor that no version of IE supports (MS Edge does!).
+        // See usage of polyfill-customevent.js to work in IE.
+    
+        document.addEventListener('DOMContentLoaded', function() {
+    
+            var element = document.querySelector('.demo-container');
+            var config = {
+                user: { givenName: 'XXXXXXXXXXXXXXXX' },
+                mode: 'Basic',
+                courseItems: [
+                    { text: 'Physics', href: 'https://example.com/physics' },
+                    { text: 'Chemistry', href: 'https://example.com/physics' }
+                ],
+                courseNav: {
+                    heading: { text: 'Physics', href: 'https://example.com/physics' },
+                    items: [
+                        { text: 'Performance', href: 'https://example.com/performance' },
+                        { text: 'Assessments', href: 'https://example.com/assessments' }
+                    ]
+                },
+                onLogin: function () {
+                    alert('You signed in');
+                },
+                onLogout: function () {
+                    alert('You signed out');
+                }
+    
+            };
+    
+            document.dispatchEvent(new CustomEvent('o.DOMContentLoaded', {
+                detail: {
+                    element: element,
+                    config: config
+                }
+            }));
+            document.dispatchEvent(new CustomEvent('o.InitContextualHelp'));
+    
+            setTimeout(function() {
+    
+                config.user = { givenName: 'Casey' };
+    
+                document.dispatchEvent(new CustomEvent('o.DOMContentLoaded', {
+                    detail: {
+                        element: element,
+                        config: config
+                    }
+                }));
+            }, 2000);
+    
+    
+    
+            // Event Listeners
+    
+            // Help menu
+            document.addEventListener('oAppHeader.help.toggle', function () {
+                console.log('oAppHeader.help.toggle');
+            });
+    
+            // Sign out event
+            document.addEventListener('oAppHeader.logout', function () {
+                console.log('oAppHeader.logout');
+            });
+    
+        });
+    </script>
+    <script src="../../js/components/contextual-help/build/dist.contextual-help.js"></script>
+    <script type="application/json" data-o-contextual-help-config>
+        {
+            "helpTopics": [
+                "console/student/freetrial",
+                "console/student/studentresources",
+                "console/student/contactsupport"
+            ]
+        }
+    </script>
+    <div class="main-wrapper">
+        <section class="score-container">
+            <div class="quiz-score flex align-center justify-between">
+                <div class="score">
+                    <div class="quiz-score">
+                        <div id="root" class="percentage">
+                        </div>
+                        <h2>Your Quiz Score !</h2>
+                    </div>
+                    <script src="../../js/main.js"></script>
+                </div>
+                <div class="overview">
+                    <span class="padding">5 Questions / 3 Correct / 2 Incorrect / Score - 75%</span>
+                </div>
+            </div>
+        </section>
+        <div class="video-quiz-container">
+            <section class="quiz-container">
+                <div class="quiz-question-container">
+                    <div class="video">
+                        <div class="video-container">
+                            <iframe src="http://www.youtube.com/embed/dFVxGRekRSg" frameborder="0" width="560" height="315"></iframe>
+                        </div>
+                    </div>
+                    <div class="question-content finished">
+                        <div class="answer-list">
+                            <div class="">
+                                <li class="list-question">
+                                    <a href="#">
+                                        <div class="list-label">
+                                            <span class="pe-icon--caret-right" aria-hidden="true"></span> Question 1 <span class="alt-color">[0:12]</span>
+                                        </div>
+                                        <div class="answer">
+                                            <span class="pe-icon--check green" aria-hidden="true"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-question">
+                                    <a href="#">
+                                        <div class="list-label">
+                                            <span class="pe-icon--caret-right" aria-hidden="true"></span> Question 2 <span class="alt-color">[1:12]</span>
+                                        </div>
+                                        <div class="answer">
+                                            <span class="pe-icon--check green" aria-hidden="true"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-question">
+                                    <a href="#">
+                                        <div class="list-label">
+                                            <span class="pe-icon--caret-down" aria-hidden="true"></span> Question 3 <span class="alt-color">[0:12]</span>
+                                        </div>
+                                        <div class="answer">
+                                            <span class="pe-icon--close red" aria-hidden="true"></span>
+                                        </div>
+                                    </a>
+                                    <div class="details">
+                                        <span class="detail-label">How does standing with your feet shoulder width apart help you have a better delivery?</span>
+                                        <div class="radio-group">
+                                            <div class="pe-radio">
+                                                <span class="pe-icon--check green" aria-hidden="true"></span>
+                                                <label class="green" for="rad1">Take a course about self esteem</label>
+                                            </div>
+
+                                            <div class="pe-radio">
+                                                <input type="radio" name="group1" id="rad2" value="" checked>
+                                                <label class="red" for="rad2">Learn meditation skills</label>
+                                            </div>
+
+                                            <div class="pe-radio">
+                                                <input type="radio" name="group1" id="rad2" value="" disabled>
+                                                <label for="rad3">Learn specific skills on what to do with your body</label>
+                                            </div>
+
+                                            <div class="pe-radio">
+                                                <input type="radio" name="group1" id="rad2" value="" disabled>
+                                                <label for="rad4">Take a course about ignoring the audience</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-question">
+                                    <a href="#">
+                                        <div class="list-label">
+                                            <span class="pe-icon--caret-right" aria-hidden="true"></span> Question 4 <span class="alt-color">[3:42]</span>
+                                        </div>
+                                        <div class="answer">
+                                            <span class="pe-icon--check green" aria-hidden="true"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-question">
+                                    <a href="#">
+                                        <div class="list-label">
+                                            <span class="pe-icon--caret-right" aria-hidden="true"></span> Question 5 <span class="alt-color">[3:40]</span>
+                                        </div>
+                                        <div class="answer">
+                                            <span class="pe-icon--check green" aria-hidden="true"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="padding-top text-align-right">
+                                <button class="pe-btn pe-btn--primary pe-btn--medium">Back to Assignments</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
